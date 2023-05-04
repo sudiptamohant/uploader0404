@@ -3,15 +3,15 @@ import os
 class Config(object):
 
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("1916166816:AAFw6-yxZOFLkR-FRSp4rsgc_jToRifUiUM", "")
+    TG_BOT_TOKEN = os.environ.get("1872433898:AAF_LYujRu6sMVVRxa-xCm5ik9DP_kz4Yq0", "")
 
     # The Telegram API things
     # Get these values from my.telegram.org
-    APP_ID = int(os.environ.get("4674611", 12345))
-    API_HASH = os.environ.get("65094863055d68954505ce9d6eef6aa1")
+    APP_ID = int(os.environ.get("5806640", 12345))
+    API_HASH = os.environ.get("127f130ad3745dbcd31aa39aa0eabcb8")
 
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("1375408229", "").split())
 
     # Ban Unwanted Members..
     BANNED_USERS = []
@@ -46,4 +46,4 @@ class Config(object):
     DEF_WATER_MARK_FILE = "@URLUPPROBOT"
 
     # Sql Database url
-    DB_URI = os.environ.get("DATABASE_URL", "")
+    DB_URI = os.environ.get("mysql://root:OrJ1cTEWkMmcPUptIIpc@containers-us-west-52.railway.app:7411/railway", "")
